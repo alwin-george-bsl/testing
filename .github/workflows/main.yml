@@ -31,12 +31,9 @@ jobs:
           path: |
             $HOME/.gradle/caches
             $HOME/.gradle/wrapper
-          key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+          key: gradle/wrapper
             
-      # Runs a set of commands using the runners shell
-      - name: build with gradle
-        run: |
-          gradle wrapper
+      
       
       # Runs a set of commands using the runners shell
       - name: build with gradle
