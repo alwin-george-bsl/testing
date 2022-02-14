@@ -28,6 +28,3 @@ jobs:
       - name: build with gradle
         run: |
           ./gradlew build
-        if: branch = master
-          script:|
-            ./gradlew -i publishToMavenCentral
