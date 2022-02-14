@@ -1,0 +1,11 @@
+/*
+ * Created by brightSPARK Labs
+ * www.brightsparklabs.com
+ */
+
+/**
+ * Mocked instances of classes from the package: com.brightsparklabs.asanti.model.schema
+ *
+ * @author brightSPARK Labs
+ */
+package com.brightsparklabs.asanti.mocks.model.schema;
