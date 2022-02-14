@@ -23,7 +23,16 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '11'
-
+        
+      # cache dependencies to speed up builds  
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        with:
+          path: |
+            $HOME/.gradle/caches
+            $HOME/.gradle/wrapper
+          key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+            
       # Runs a set of commands using the runners shell
       - name: build with gradle
         run: |
